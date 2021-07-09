@@ -1,0 +1,13 @@
+.center {
+    align-content: center;
+    text-align: center;
+}
+
+.book-img {
+    width: 100px;
+}
+
+.vlog-img {
+    width: 100px;
+    padding: 10px;
+}

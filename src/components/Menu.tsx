@@ -5,6 +5,15 @@ import logo from '../assets/images/tartan37.svg';
 import Navbar from 'react-bootstrap/Navbar';
 import {Nav} from "react-bootstrap";
 
+const menuStyle = {
+    paddingRight: "10px",
+    paddingLeft: "10px"
+}
+
+const menuContainerStyle = {
+    marginBottom: "105px"
+}
+
 class MenuInternal extends Component<any, any> {
 
     getIsActive(path: string) {
@@ -17,8 +26,8 @@ class MenuInternal extends Component<any, any> {
 
     render() {
         return (
-            <div>
-                <Navbar bg="t37" expand="lg" variant="dark">
+            <div style={menuContainerStyle}>
+                <Navbar style={menuStyle} bg="t37" expand="lg" variant="dark" collapseOnSelect={true} fixed="top">
                     <Navbar.Brand>
                         <Link className="logo" to={"/"}>
                             <img className="logo-img" src={logo}/>
@@ -30,8 +39,10 @@ class MenuInternal extends Component<any, any> {
                             <Nav.Link active={this.getIsActive("/fleet")} href="/fleet">Fleet</Nav.Link>
                             <Nav.Link active={this.getIsActive("/gallery")} href="/gallery">Gallery</Nav.Link>
                             <Nav.Link active={this.getIsActive("/specs")} href="/specs">Specifications</Nav.Link>
+                            <Nav.Link active={this.getIsActive("/resources")} href="/resources">Tech Resources</Nav.Link>
                             <Nav.Link href="http://www.tartan37.com/t37forum/">Forum</Nav.Link>
                             <Nav.Link active={this.getIsActive("/4sale")} href="/4sale">Sales Floor</Nav.Link>
+                            <Nav.Link active={this.getIsActive("/history")} href="/history">History</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

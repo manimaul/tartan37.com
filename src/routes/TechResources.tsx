@@ -2,7 +2,7 @@ import React from 'react';
 
 function TechResources() {
     return (
-        <div className="content">
+        <div className="container">
             TechResources
         </div>
     );

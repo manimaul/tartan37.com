@@ -2,7 +2,7 @@ import React from 'react';
 
 function SalesFloor() {
     return (
-        <div className="content">
+        <div className="container">
             SalesFloor
         </div>
     );

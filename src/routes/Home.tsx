@@ -1,37 +1,130 @@
 import React from 'react';
+import image297 from '../assets/images/image297.jpg';
+import image299 from '../assets/images/image299.jpg';
+import image301 from '../assets/images/image301.jpg';
+import image303 from '../assets/images/image303.jpg';
+import silentVoyage from '../assets/images/silentVoyage.jpeg';
+import oceansAreWaiting from '../assets/images/oceansAreWaiting.jpeg';
+import superiorRun from '../assets/images/superiorRun.jpeg';
+import soulianis from '../assets/images/soulianis.jpg';
+import whim from '../assets/images/whim.jpg';
+import holiday from '../assets/images/holiday.jpg';
+import './Home.css'
 
 function Home() {
     return (
-        <div className="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra ligula. Sed nec ipsum vitae justo posuere consequat a eget nulla. Nunc dictum leo ac ultricies dignissim. Praesent convallis sapien pretium bibendum aliquet. Praesent nec turpis at lacus cursus malesuada rutrum molestie dolor. Nullam ultricies sodales diam nec euismod. Vivamus diam metus, convallis sit amet imperdiet in, posuere quis tortor. Aliquam sed sapien ultrices, gravida sapien a, bibendum lacus. In elementum nisl quis est molestie hendrerit. Phasellus malesuada vitae erat at sodales.
+        <div className="container">
+            <div>
+                <h1>Welcome to the Tartan 37 Sailing Association Web Site</h1>
+                <hr/>
+                <h4>The Tartan 37 was designed by Sparkman & Stephens. Tartan Yachts produced 486 of these classic
+                    boats from 1976 through 1988, and most are still sailing today.
+                </h4>
 
-            Sed erat lectus, ultrices non libero et, convallis porttitor lorem. Vivamus eget scelerisque tortor. Aliquam scelerisque ligula eget quam semper, vitae tempor ex pharetra. Curabitur tempus dui quis sagittis tincidunt. Ut quis malesuada sapien, vitae condimentum sem. Mauris rhoncus, neque a pellentesque sollicitudin, turpis nulla imperdiet purus, ac hendrerit justo turpis in nunc. Morbi maximus ligula sed metus rutrum, eu facilisis arcu ullamcorper. Mauris egestas leo eu est iaculis pharetra. Etiam vehicula, orci nec commodo lacinia, ex velit interdum nulla, a fermentum eros dui ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce sit amet erat tempor, vehicula leo vitae, pellentesque lectus. Suspendisse nisl ante, efficitur quis justo eget, fringilla tempor lectus.
+                <br />
+                <div className="row">
+                    <div className="col">
+                        <img src={image297}/>
+                    </div>
+                    <div className="col">
+                        <img src={image299}/>
+                    </div>
+                    <div className="col">
+                        <img src={image301}/>
+                    </div>
+                    <div className="col">
+                        <img src={image303}/>
+                    </div>
+                </div>
+            </div>
 
-            Integer commodo est sed tortor congue dapibus. Quisque nec purus auctor, porttitor dui vel, suscipit orci. Pellentesque metus sapien, mattis nec libero sit amet, sagittis accumsan tellus. Donec eu sodales dolor, non molestie odio. Nulla semper lacus vehicula lorem sagittis, non pulvinar purus dignissim. Phasellus sed ante nulla. Quisque vulputate eu metus sed venenatis. Nullam eleifend lectus turpis, sit amet egestas nibh lacinia id. Morbi condimentum aliquet quam, vitae eleifend orci pretium id. Donec luctus dictum venenatis. Aliquam finibus nibh quis lacus laoreet, sit amet vestibulum tortor viverra. Donec nec fermentum orci.
+            <br />
+            <br />
+            <h3>Vlogs featuring the Tartan 37</h3>
 
-            Morbi nibh nisl, sagittis et quam eleifend, cursus consectetur nunc. Vestibulum et hendrerit arcu, id blandit tellus. Nulla at felis sed arcu porta convallis non in orci. Proin nibh mi, interdum eu quam eget, lobortis faucibus eros. Nullam viverra sed ligula non commodo. Nullam eget faucibus enim. Maecenas risus quam, consequat sit amet iaculis ut, viverra in sapien. Etiam sagittis feugiat libero a mattis. Curabitur nec commodo lacus. Sed non risus eros. Curabitur semper tellus sapien, id vestibulum lorem laoreet et. Maecenas sodales nec massa in ultricies.
+            <div className="card">
+                <img src={soulianis} className="card-img-top vlog-img"/>
+                <div className="card-body">
+                    <h5 className="card-title">Sailing Soulianis</h5>
+                    <p className="card-text">We're a couple of born and raised Midwesterners with hearts belonging to
+                        the ocean. After a decade of dreaming + planning to buy a sailboat, we found a beautiful Tartan
+                        37 in Wisconsin, sailed for a season in the fresh water of Lake Michigan, and are migrating
+                        south via the inland river system to saltwater and warmer climates. Join us on our journey!</p>
+                    <a href="https://www.youtube.com/channel/UCRqsOR0Y2zru-jXSzLcMcxg" className="btn btn-danger">Watch
+                        on YouTube</a>
+                </div>
+            </div>
+            <br/>
+            <div className="card">
+                <img src={holiday} className="card-img-top vlog-img"/>
+                <div className="card-body">
+                    <h5 className="card-title">Fun On Holiday Sailing</h5>
+                    <p className="card-text">Zach and Lindy quit their jobs, sold most of their stuff, and moved onto
+                        their sailboat permanently for cruising. Follow along with us as we travel around on our Tartan
+                        37 sailboat Holiday.</p>
+                    <a href="https://www.youtube.com/channel/UCuQlVVLEskmQk-d2222OREg" className="btn btn-danger">Watch
+                        on YouTube</a>
+                </div>
+            </div>
+            <br/>
+            <div className="card">
+                <img src={whim} className="card-img-top vlog-img"/>
+                <div className="card-body">
+                    <h5 className="card-title">Sailing on a Whim</h5>
+                    <p className="card-text">Join Dan, Krista, Lilly, and crew as we leave the frigid north and head
+                        south to tropical waters in our new sailboat, Whim! We are excited to set off on our adventures
+                        and take you with us. We are just getting started, so buckle-up and come along with us as we
+                        begin our new adventure!</p>
+                    <a href="https://www.youtube.com/c/SailingonaWhim" className="btn btn-danger">Watch
+                        on YouTube</a>
+                </div>
+            </div>
 
-            Nunc at sagittis nibh. Curabitur posuere nunc non dolor porta hendrerit. Duis in dui ullamcorper, sodales mauris ac, fringilla risus. Donec semper, arcu vel commodo feugiat, turpis mi vehicula ligula, vel porttitor nibh sem id tortor. Integer egestas magna iaculis massa sagittis, et auctor metus vestibulum. Donec cursus turpis lectus, consequat ultrices nibh faucibus nec. Donec rutrum elit leo, id condimentum ligula lacinia eu. Maecenas tempor lectus vel eros porta bibendum. Nunc posuere, justo egestas aliquam ornare, justo nisl vehicula ligula, ut aliquam justo diam vel ante. Integer ultricies turpis non vehicula lobortis. Suspendisse lacinia ipsum sed nulla luctus mattis. Quisque dictum finibus sem sit amet tincidunt. Fusce tempus lectus vitae quam mattis pharetra. Proin pulvinar libero turpis, eu finibus arcu vehicula et.
+            <br />
+            <br />
+            <h3>Books featuring the Tartan 37</h3>
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra ligula. Sed nec ipsum vitae justo posuere consequat a eget nulla. Nunc dictum leo ac ultricies dignissim. Praesent convallis sapien pretium bibendum aliquet. Praesent nec turpis at lacus cursus malesuada rutrum molestie dolor. Nullam ultricies sodales diam nec euismod. Vivamus diam metus, convallis sit amet imperdiet in, posuere quis tortor. Aliquam sed sapien ultrices, gravida sapien a, bibendum lacus. In elementum nisl quis est molestie hendrerit. Phasellus malesuada vitae erat at sodales.
+            <div className="card">
+                <img src={silentVoyage} className="card-img-top book-img"/>
+                <div className="card-body">
+                    <h5 className="card-title">Silent Voyage</h5>
+                    <p className="card-text">In 2004, Charl de Villiers became the first deaf person to complete
+                        a solo circumnavigation aboard his Tartan 37 Island Time</p>
+                    <a href="https://www.amazon.com/s?k=Silent+voyage&i=stripbooks" className="btn btn-primary">Buy on
+                        Amazon</a>
+                </div>
+            </div>
+            <br/>
+            <div className="card">
+                <img src={oceansAreWaiting} className="card-img-top book-img"/>
+                <div className="card-body">
+                    <h5 className="card-title">The Oceans Are Waiting</h5>
+                    <p className="card-text">Sharon Ragle is a woman in perpetual motion, and her rollicking tale about
+                        her personal ad attractive lady sailor seeks SWM for cruising future and beyond and marriage and
+                        four-and-a-half-year circumnavigation aboard the Tartan 37 TIGGER with said SWM (a great guy
+                        named Dave) is written in her brilliantly impulsive style of life.</p>
+                    <a href="https://www.amazon.com/s?k=The+oceans+are+waiting&i=stripbooks"
+                       className="btn btn-primary">Buy on Amazon</a>
+                </div>
+            </div>
+            <br/>
+            <div className="card">
+                <img src={superiorRun} className="card-img-top book-img"/>
+                <div className="card-body">
+                    <h5 className="card-title">Superior Run</h5>
+                    <p className="card-text">Paul Findlay is living his dream, sailing the Great Lakes aboard his
+                        beloved sailboat and writing about his voyages to pay the bills. When Paul receives a cryptic
+                        call for help from his old college roommate Rich Perry, the dream quickly turns into a
+                        nightmare. A sudden turn of events has left Rich targeted for death by a powerful, ruthless
+                        adversary, and only Paul is left to help him survive. They plan to cross Lake Superior and find
+                        safety in Canada, but Rich's enemies are closing in. A deadly game of cat-and-mouse across the
+                        greatest of the Great Lakes begins.</p>
+                    <a href="https://www.amazon.com/s?k=Superior+run&i=stripbooks" className="btn btn-primary">Buy on
+                        Amazon</a>
+                </div>
+            </div>
+            <br/>
 
-            Sed erat lectus, ultrices non libero et, convallis porttitor lorem. Vivamus eget scelerisque tortor. Aliquam scelerisque ligula eget quam semper, vitae tempor ex pharetra. Curabitur tempus dui quis sagittis tincidunt. Ut quis malesuada sapien, vitae condimentum sem. Mauris rhoncus, neque a pellentesque sollicitudin, turpis nulla imperdiet purus, ac hendrerit justo turpis in nunc. Morbi maximus ligula sed metus rutrum, eu facilisis arcu ullamcorper. Mauris egestas leo eu est iaculis pharetra. Etiam vehicula, orci nec commodo lacinia, ex velit interdum nulla, a fermentum eros dui ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce sit amet erat tempor, vehicula leo vitae, pellentesque lectus. Suspendisse nisl ante, efficitur quis justo eget, fringilla tempor lectus.
-
-            Integer commodo est sed tortor congue dapibus. Quisque nec purus auctor, porttitor dui vel, suscipit orci. Pellentesque metus sapien, mattis nec libero sit amet, sagittis accumsan tellus. Donec eu sodales dolor, non molestie odio. Nulla semper lacus vehicula lorem sagittis, non pulvinar purus dignissim. Phasellus sed ante nulla. Quisque vulputate eu metus sed venenatis. Nullam eleifend lectus turpis, sit amet egestas nibh lacinia id. Morbi condimentum aliquet quam, vitae eleifend orci pretium id. Donec luctus dictum venenatis. Aliquam finibus nibh quis lacus laoreet, sit amet vestibulum tortor viverra. Donec nec fermentum orci.
-
-            Morbi nibh nisl, sagittis et quam eleifend, cursus consectetur nunc. Vestibulum et hendrerit arcu, id blandit tellus. Nulla at felis sed arcu porta convallis non in orci. Proin nibh mi, interdum eu quam eget, lobortis faucibus eros. Nullam viverra sed ligula non commodo. Nullam eget faucibus enim. Maecenas risus quam, consequat sit amet iaculis ut, viverra in sapien. Etiam sagittis feugiat libero a mattis. Curabitur nec commodo lacus. Sed non risus eros. Curabitur semper tellus sapien, id vestibulum lorem laoreet et. Maecenas sodales nec massa in ultricies.
-
-            Nunc at sagittis nibh. Curabitur posuere nunc non dolor porta hendrerit. Duis in dui ullamcorper, sodales mauris ac, fringilla risus. Donec semper, arcu vel commodo feugiat, turpis mi vehicula ligula, vel porttitor nibh sem id tortor. Integer egestas magna iaculis massa sagittis, et auctor metus vestibulum. Donec cursus turpis lectus, consequat ultrices nibh faucibus nec. Donec rutrum elit leo, id condimentum ligula lacinia eu. Maecenas tempor lectus vel eros porta bibendum. Nunc posuere, justo egestas aliquam ornare, justo nisl vehicula ligula, ut aliquam justo diam vel ante. Integer ultricies turpis non vehicula lobortis. Suspendisse lacinia ipsum sed nulla luctus mattis. Quisque dictum finibus sem sit amet tincidunt. Fusce tempus lectus vitae quam mattis pharetra. Proin pulvinar libero turpis, eu finibus arcu vehicula et.
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae viverra ligula. Sed nec ipsum vitae justo posuere consequat a eget nulla. Nunc dictum leo ac ultricies dignissim. Praesent convallis sapien pretium bibendum aliquet. Praesent nec turpis at lacus cursus malesuada rutrum molestie dolor. Nullam ultricies sodales diam nec euismod. Vivamus diam metus, convallis sit amet imperdiet in, posuere quis tortor. Aliquam sed sapien ultrices, gravida sapien a, bibendum lacus. In elementum nisl quis est molestie hendrerit. Phasellus malesuada vitae erat at sodales.
-
-            Sed erat lectus, ultrices non libero et, convallis porttitor lorem. Vivamus eget scelerisque tortor. Aliquam scelerisque ligula eget quam semper, vitae tempor ex pharetra. Curabitur tempus dui quis sagittis tincidunt. Ut quis malesuada sapien, vitae condimentum sem. Mauris rhoncus, neque a pellentesque sollicitudin, turpis nulla imperdiet purus, ac hendrerit justo turpis in nunc. Morbi maximus ligula sed metus rutrum, eu facilisis arcu ullamcorper. Mauris egestas leo eu est iaculis pharetra. Etiam vehicula, orci nec commodo lacinia, ex velit interdum nulla, a fermentum eros dui ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce sit amet erat tempor, vehicula leo vitae, pellentesque lectus. Suspendisse nisl ante, efficitur quis justo eget, fringilla tempor lectus.
-
-            Integer commodo est sed tortor congue dapibus. Quisque nec purus auctor, porttitor dui vel, suscipit orci. Pellentesque metus sapien, mattis nec libero sit amet, sagittis accumsan tellus. Donec eu sodales dolor, non molestie odio. Nulla semper lacus vehicula lorem sagittis, non pulvinar purus dignissim. Phasellus sed ante nulla. Quisque vulputate eu metus sed venenatis. Nullam eleifend lectus turpis, sit amet egestas nibh lacinia id. Morbi condimentum aliquet quam, vitae eleifend orci pretium id. Donec luctus dictum venenatis. Aliquam finibus nibh quis lacus laoreet, sit amet vestibulum tortor viverra. Donec nec fermentum orci.
-
-            Morbi nibh nisl, sagittis et quam eleifend, cursus consectetur nunc. Vestibulum et hendrerit arcu, id blandit tellus. Nulla at felis sed arcu porta convallis non in orci. Proin nibh mi, interdum eu quam eget, lobortis faucibus eros. Nullam viverra sed ligula non commodo. Nullam eget faucibus enim. Maecenas risus quam, consequat sit amet iaculis ut, viverra in sapien. Etiam sagittis feugiat libero a mattis. Curabitur nec commodo lacus. Sed non risus eros. Curabitur semper tellus sapien, id vestibulum lorem laoreet et. Maecenas sodales nec massa in ultricies.
-
-            Nunc at sagittis nibh. Curabitur posuere nunc non dolor porta hendrerit. Duis in dui ullamcorper, sodales mauris ac, fringilla risus. Donec semper, arcu vel commodo feugiat, turpis mi vehicula ligula, vel porttitor nibh sem id tortor. Integer egestas magna iaculis massa sagittis, et auctor metus vestibulum. Donec cursus turpis lectus, consequat ultrices nibh faucibus nec. Donec rutrum elit leo, id condimentum ligula lacinia eu. Maecenas tempor lectus vel eros porta bibendum. Nunc posuere, justo egestas aliquam ornare, justo nisl vehicula ligula, ut aliquam justo diam vel ante. Integer ultricies turpis non vehicula lobortis. Suspendisse lacinia ipsum sed nulla luctus mattis. Quisque dictum finibus sem sit amet tincidunt. Fusce tempus lectus vitae quam mattis pharetra. Proin pulvinar libero turpis, eu finibus arcu vehicula et.
         </div>
     );
 }

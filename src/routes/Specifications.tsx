@@ -2,7 +2,7 @@ import React from 'react';
 
 function Specifications() {
     return (
-        <div className="content">
+        <div className="container">
             Specifications
         </div>
     );
