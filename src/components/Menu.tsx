@@ -2,71 +2,39 @@ import './Menu.css';
 import React, {Component} from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import logo from '../assets/images/tartan37.svg';
+import Navbar from 'react-bootstrap/Navbar';
+import {Nav} from "react-bootstrap";
 
+class MenuInternal extends Component<any, any> {
 
-
-type MenuState = {
-    expanded: boolean
-}
-
-class MenuInternal extends Component<any, MenuState> {
-
-    constructor(props: any) {
-        super(props);
-        this.state = {expanded: false}
-        this.menuClick = this.menuClick.bind(this)
-        this.linkClick = this.linkClick.bind(this)
-    }
-
-    menuClick() {
-        this.setState({expanded: !this.state.expanded})
-    }
-
-    linkClick() {
-        this.setState({expanded: false})
-    }
-
-    getClassNames(path: string) {
+    getIsActive(path: string) {
         if (this.props.location.pathname.toUpperCase() === path.toUpperCase()) {
-            return "menu-link selected"
+            return true
         } else {
-            return "menu-link"
+            return false
         }
     }
 
     render() {
         return (
-            <div className="header">
-                <Link className="logo" to={"/"} onClick={this.linkClick}>
-                    <img className="logo-img" src={logo}/>
-                </Link>
-                <input className="menu-btn" type="checkbox" id="menu-btn"
-                       checked={this.state.expanded}
-                       onChange={this.menuClick}/>
-
-                <label className="menu-icon" htmlFor="menu-btn">
-                    <span className="navicon"></span>
-                </label>
-                <ul className="menu">
-                    <li className="pure-menu-item">
-                        <Link to="/fleet" className={this.getClassNames("/fleet")} onClick={this.linkClick}>Fleet</Link>
-                    </li>
-                    <li className="pure-menu-item">
-                        <Link to="/gallery" className={this.getClassNames("/gallery")} onClick={this.linkClick}>Gallery</Link>
-                    </li>
-                    <li className="pure-menu-item">
-                        <Link to="/specs" className={this.getClassNames("/specs")} onClick={this.linkClick}>Specifications</Link>
-                    </li>
-                    <li className="pure-menu-item">
-                        <Link to="/resources" className={this.getClassNames("/resources")} onClick={this.linkClick}>Tech Resources</Link>
-                    </li>
-                    <li className="pure-menu-item">
-                        <a href="http://www.tartan37.com/t37forum/" className="menu-link">Forum</a>
-                    </li>
-                    <li className="pure-menu-item">
-                        <Link to="/4sale" className={this.getClassNames("/4sale")} onClick={this.linkClick}>Sales Floor</Link>
-                    </li>
-                </ul>
+            <div>
+                <Navbar bg="t37" expand="lg" variant="dark">
+                    <Navbar.Brand>
+                        <Link className="logo" to={"/"}>
+                            <img className="logo-img" src={logo}/>
+                        </Link>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link active={this.getIsActive("/fleet")} href="/fleet">Fleet</Nav.Link>
+                            <Nav.Link active={this.getIsActive("/gallery")} href="/gallery">Gallery</Nav.Link>
+                            <Nav.Link active={this.getIsActive("/specs")} href="/specs">Specifications</Nav.Link>
+                            <Nav.Link href="http://www.tartan37.com/t37forum/">Forum</Nav.Link>
+                            <Nav.Link active={this.getIsActive("/4sale")} href="/4sale">Sales Floor</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
         )
     }

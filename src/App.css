@@ -3,3 +3,23 @@
     padding-left: 25px;
     padding-right: 25px;
 }
+
+/*.content-bg {*/
+/*    background-image: url('/src/assets/images/background.jpg');*/
+/*    background-size: 100%;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    background-color: #ffffff;
+}
+
+.center {
+    align-content: center;
+    text-align: center;
+}
