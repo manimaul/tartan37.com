@@ -1,11 +1,11 @@
 import React from 'react';
 import data from '../assets/fleet.json';
 
-interface Owner {
+export interface Owner {
     name: string;
 }
 
-interface FleetItem {
+export interface FleetItem {
     hull: number;
     owner: Owner;
     name: string;
@@ -16,7 +16,7 @@ interface FleetItem {
     web: string;
 }
 
-const fleetData = data as FleetItem[];
+export const fleetData = data as FleetItem[];
 
 function Image(named: string) {
     if (named != null && named.length > 0) {
